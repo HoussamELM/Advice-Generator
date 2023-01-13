@@ -12,15 +12,22 @@ function App() {
 
 
 
-  const generateAdvice = () => {
-    fetch('https://api.adviceslip.com/advice')
+   const generateAdvice = async () => {
+    // fetch('https://api.adviceslip.com/advice')
+    // .then((response) => response.json())
+    // .then((data) => {
+    //   const adv = data.slip.advice
+    //   const id  = data.slip.id
+    //   setAdvice({advice:adv,id:id})
+    // })
+    
+    const response = await fetch('https://api.adviceslip.com/advice')
     .then((response) => response.json())
     .then((data) => {
       const adv = data.slip.advice
       const id  = data.slip.id
       setAdvice({advice:adv,id:id})
     })
-    
   }
 
   useEffect(() => {
