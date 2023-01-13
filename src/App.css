@@ -54,7 +54,8 @@ button {
   height: 60px;
   width: 60px;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  cursor: pointer;
 }
 .spin {
   animation-name: spin;
