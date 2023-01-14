@@ -4,14 +4,7 @@
   padding: 2rem;
   text-align: center
 }
-.buttonContainer, .container {
-  background-color: #313a48;
-  display: flex
-}
-.buttonContainer, button {
-  position: relative;
-  display: flex
-}
+
 .container {
   flex-direction: column;
   justify-content: flex-end;
@@ -44,6 +37,14 @@
   width: 100%;
   align-items: center;
   justify-content: center
+}
+.buttonContainer, .container {
+  background-color: #313a48;
+  display: flex
+}
+.buttonContainer, button {
+  position: relative;
+  display: flex
 }
 button {
   top: 30px;

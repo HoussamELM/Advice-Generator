@@ -6,21 +6,12 @@ const Advice = ({ advice, generate }) => {
   const [spin, setSpin] = useState(false);
 
   const animate = () => {
-
-    // Button begins to spin
     setSpin(true);
-
-    // Buttons stops to spin after 2 seconds
     setTimeout(() => setSpin(false), 2000);
-
   }
-
   const buttonClick = () => {
     generate()
-    // Button begins to spin
     setSpin(true);
-
-    // Buttons stops to spin after 2 seconds
     setTimeout(() => setSpin(false), 2000);
   }
 
